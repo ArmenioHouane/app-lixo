@@ -21,12 +21,22 @@ jobs:
 
       - name: Configurar Gradle (com cache)
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
 
-      - name: Conceder permissão de execução ao gradlew
-        run: chmod +x gradlew
+      # O debug.keystore está no .gitignore; geramos um em tempo de build
+      # (credenciais iguais às definidas em app/build.gradle.kts)
+      - name: Gerar debug keystore
+        run: >
+          keytool -genkeypair -v
+          -keystore debug.keystore
+          -storepass android -keypass android
+          -alias androiddebugkey -keyalg RSA -keysize 2048
+          -validity 10000
+          -dname "CN=Android Debug,O=Android,C=US"
 
       - name: Compilar APK de debug
-        run: ./gradlew assembleDebug --stacktrace
+        run: gradle assembleDebug --stacktrace
 
       - name: Publicar APK como artefacto
         uses: actions/upload-artifact@v4

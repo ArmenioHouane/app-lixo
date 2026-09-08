@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Circular subtle back glow -->
+    <path
+        android:fillColor="#26FFFFFF"
+        android:pathData="M54,54m-30,0a30,30 0 1,1 60,0a30,30 0 1,1 -60,0" />
+    
+    <!-- Waste bin body with recycling leaf / checkmark -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,44h22l-2.4,24.2c-0.2,2.1 -2,3.8 -4.1,3.8h-9c-2.1,0 -3.9,-1.7 -4.1,-3.8L43,44z M40,39h28v3h-28z M50,35h8v2h-8z" />
+    
+    <!-- Inner recycling / clean city leaf motif -->
+    <path
+        android:fillColor="#1B7A43"
+        android:pathData="M54,49c-3,0 -5.5,2.5 -5.5,5.5c0,4 5.5,8.5 5.5,8.5s5.5,-4.5 5.5,-8.5c0,-3 -2.5,-5.5 -5.5,-5.5z M54,58c-1.7,0 -3,-1.3 -3,-3c0,-1.4 1.8,-3.4 3,-4.5c1.2,1.1 3,3.1 3,4.5c0,1.7 -1.3,3 -3,3z" />
+</vector>

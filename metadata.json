@@ -1,0 +1,7 @@
+{
+  "name": "Denúncia de Lixo Maputo",
+  "description": "Aplicação móvel cívica e administrativa para registo, acompanhamento e gestão operacional de denúncias de lixo na cidade de Maputo com autenticação de perfis, validação OTP, mapa cartográfico e suporte 100% offline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

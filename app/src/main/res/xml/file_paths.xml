@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Ficheiros de evidência (fotos/vídeos) criados em context.filesDir/records -->
+    <files-path
+        name="records"
+        path="records/" />
+</paths>

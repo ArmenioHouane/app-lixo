@@ -294,7 +294,8 @@ fun AppButton(
             .testTag(testTag),
         contentAlignment = Alignment.Center
     ) {
-        val isCompact = maxHeight.isFinite && maxHeight < 52.dp
+        // Altura não limitada (Infinity) => false => botão normal de 52dp
+        val isCompact = maxHeight < 52.dp
 
         val textStyle = if (isCompact) {
             AppTypography.Label.copy(fontWeight = FontWeight.Bold)
